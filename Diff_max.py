@@ -21,7 +21,7 @@ def maxisum(datalist):
         difflist[i+1][0]= max(difflist[i][0],difflist[i][1] + abs(1-datalist[i]))
         difflist[i + 1][1] = max(difflist[i][0] + abs(datalist[i + 1] - 1),
                            difflist[i][1] + abs(datalist[i + 1] - datalist[i]));
-        print(difflist)
-    print(difflist)
+#         print(difflist)
+    print("maximum difference is :{}".format(max(difflist[len(difflist)-1][0],difflist[len(difflist)-1][1])))
 if __name__ == "__main__":
     maxisum([1,8,9])
